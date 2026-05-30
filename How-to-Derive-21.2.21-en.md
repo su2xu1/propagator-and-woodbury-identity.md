@@ -2,7 +2,7 @@
 I will explain the step-by-step procedure to derive the scalar field propagator $\Delta_{nm}(k)$ in Eq. (21.2.21) from the Lagrangian in Eq. (21.2.14).
 
 
-<pre><code>```math
+```math
 \begin{aligned}
 L_{QUAD} &= -\frac{1}{4}\sum_{\alpha}(\partial^{\mu}A_{\alpha}^{\nu}-\partial^{\nu}A_{\alpha}^{\mu})(\partial_{\mu}A_{\alpha\nu}-\partial_{\nu}A_{\alpha\mu}) \\
 &\quad -\frac{1}{2}\sum_{\alpha\beta}\mu^{2}_{\alpha\beta}A_{\alpha}^{\mu}A_{\beta\mu}
@@ -14,7 +14,7 @@ L_{QUAD} &= -\frac{1}{4}\sum_{\alpha}(\partial^{\mu}A_{\alpha}^{\nu}-\partial^{\
 -\xi\sum_{\alpha\beta}\mu^{2}_{\alpha\beta}\omega_{\alpha}^{*}\omega_{\beta} \\
 &\quad +\text{total derivatives}, \quad (21.2.14)
 \end{aligned}
-```</code></pre>
+```
 
 
 $$\
