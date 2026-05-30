@@ -1,6 +1,7 @@
 # Weinberg QFT: Step-by-Step Derivation of Eq. (21.2.21) from Eq. (21.2.14)
 I will explain the step-by-step procedure to derive the scalar field propagator $\Delta_{nm}(k)$ in Eq. (21.2.21) from the Lagrangian in Eq. (21.2.14).
 
+
 $$
 \begin{aligned}
 L_{QUAD} &= -\frac{1}{4}\sum_{\alpha}(\partial^{\mu}A_{\alpha}^{\nu}-\partial^{\nu}A_{\alpha}^{\mu})(\partial_{\mu}A_{\alpha\nu}-\partial_{\nu}A_{\alpha\mu}) \\
@@ -14,6 +15,7 @@ L_{QUAD} &= -\frac{1}{4}\sum_{\alpha}(\partial^{\mu}A_{\alpha}^{\nu}-\partial^{\
 &\quad +\text{total derivatives}, \quad (21.2.14)
 \end{aligned}
 $$
+
 
 $$\
 \begin{aligned}
