@@ -1,15 +1,8 @@
 # Weinberg QFT: Step-by-Step Derivation of Eq. (21.2.21) from Eq. (21.2.14)
 I will explain the step-by-step procedure to derive the scalar field propagator $\Delta_{nm}(k)$ in Eq. (21.2.21) from the Lagrangian in Eq. (21.2.14).
 
-$$L_{QUAD}=-\frac{1}{4}\sum_\alpha({\partial^\mu}{A_\alpha^\nu}-{\partial^\nu}{A_\alpha^\mu})({\partial_\mu}{A_{\alpha\nu}}-{\partial_\nu}{A_{\alpha\mu}})$$
-
-$$-\frac{1}{2}\sum_{\alpha\beta}\mu^2_{\alpha\beta}A_\alpha^{\mu}A_{\beta\mu} -\frac{1}{2\xi}\sum_\alpha({\partial_\mu}{A_\alpha^\mu})({\partial_\nu}{A_\alpha^\nu})$$
-$$-\frac{1}{2}\sum_{n}{\partial_{\mu}\phi^{\prime}_{n}}{\partial^{\mu}\phi^{\prime}_{n}}
-\quad-\frac{1}{2}\sum_{nm}M^2_{nm}{\phi^{\prime}_{n}}{\phi^{\prime}_{m}}$$ 
-
- $$- {\overline\Psi}({\gamma_\mu}{\partial^\mu} +m)\Psi$$
-$$ -\partial_\mu\omega_\alpha^*\partial^\mu\omega_\alpha - \xi\sum_{\alpha\beta}\mu^2_{\alpha\beta}\omega^*_\alpha\omega_\beta$$
-$$+ total derivatives, \quad (21.2.14)$$
+$$L_{QUAD}=-\frac{1}{4}\sum_\alpha({\partial^\mu}{A_\alpha^\nu}-{\partial^\nu}{A_\alpha^\mu})({\partial_\mu}{A_{\alpha\nu}}-{\partial_\nu}{A_{\alpha\mu}})
+-\frac{1}{2}\sum_{\alpha\beta}\mu^2_{\alpha\beta}A_\alpha^{\mu}A_{\beta\mu} -\frac{1}{2\xi}\sum_\alpha({\partial_\mu}{A_\alpha^\mu})({\partial_\nu}{A_\alpha^\nu})-\frac{1}{2}\sum_{n}{\partial_{\mu}\phi^{\prime}_{n}}{\partial^{\mu}\phi^{\prime}_{n}}\quad-\frac{1}{2}\sum_{nm}M^2_{nm}{\phi^{\prime}_{n}}{\phi^{\prime}_{m}} - {\overline\Psi}({\gamma_\mu}{\partial^\mu} +m)\Psi-\partial_\mu\omega_\alpha^*\partial^\mu\omega_\alpha - \xi\sum_{\alpha\beta}\mu^2_{\alpha\beta}\omega^*_\alpha\omega_\beta+ total derivatives, \quad (21.2.14)$$
 
 $$\phi: \Delta_{nm}(k)= (k^2+M^2)^{-1}_{nm}+\xi\sum_{\alpha\beta}(t_{\alpha}v)_{n}(t_{\alpha}v)_{m}(k^2)^{-1}(k^2+\xi\mu^2)^{-1}_{\alpha\beta}\quad (21.2.21)$$
 
