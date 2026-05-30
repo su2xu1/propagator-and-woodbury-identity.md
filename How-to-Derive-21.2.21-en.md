@@ -4,21 +4,21 @@ I will explain the step-by-step procedure to derive the scalar field propagator 
 $$L_{QUAD}=-\frac{1}{4}\sum_\alpha({\partial^\mu}{A_\alpha^\nu}-{\partial^\nu}{A_\alpha^\mu})({\partial_\mu}{A_{\alpha\nu}}-{\partial_\nu}{A_{\alpha\mu}})$$
 
 $$-\frac{1}{2}\sum_{\alpha\beta}\mu^2_{\alpha\beta}A_\alpha^{\mu}A_{\beta\mu} -\frac{1}{2\xi}\sum_\alpha({\partial_\mu}{A_\alpha^\mu})({\partial_\nu}{A_\alpha^\nu})$$
-$$-\frac{1}{2}\sum_n{\partial_{\mu}\phi^{'}_n}{\partial^{\mu}\phi^{'}_n}
-	-\frac{1}{2}\sum_{nm}M^2_{nm}{\phi^{'}_n}{\phi^{'}_m}$$ 
+$$-\frac{1}{2}\sum_{n}{\partial_{\mu}\phi^{\prime}_{n}}{\partial^{\mu}\phi^{\prime}_{n}}
+\quad-\frac{1}{2}\sum_{nm}M^2_{nm}{\phi^{\prime}_{n}}{\phi^{\prime}_{m}}$$ 
 
  $$- {\overline\Psi}({\gamma_\mu}{\partial^\mu} +m)\Psi$$
 $$ -\partial_\mu\omega_\alpha^*\partial^\mu\omega_\alpha - \xi\sum_{\alpha\beta}\mu^2_{\alpha\beta}\omega^*_\alpha\omega_\beta$$
 $$+ total derivatives, \quad (21.2.14)$$
 
-$$\phi: \Delta_{nm}(k)= (k^2+M^2)^{-1}_{nm}+\xi\sum_{\alpha\beta}(t_\alpha{v})_n(t_\alpha{v})_m(k^2)^{-1}(k^2+\xi\mu^2)^{-1}_{\alpha\beta}\quad (21.2.21)$$
+$$\phi: \Delta_{nm}(k)= (k^2+M^2)^{-1}_{nm}+\xi\sum_{\alpha\beta}(t_{\alpha}v)_{n}(t_{\alpha}v)_{m}(k^2)^{-1}(k^2+\xi\mu^2)^{-1}_{\alpha\beta}\quad (21.2.21)$$
 
 
 ## Step 1: Identifying the momentum space operator $D(k)$ for the scalar field
-Extract the quadratic terms for the scalar field $\phi'_n$ (denoted as $L_{\phi'}$) from Eq. (21.2.14).
-$$ L_{\phi'} = -\frac{1}{2}\sum_n \partial_\mu \phi'_n \partial^\mu \phi'_n - \frac{1}{2}\sum_{n,m} M^2_{\text{full}, nm} \phi'_n \phi'_m $$
+Extract the quadratic terms for the scalar field $\phi^{\prime}_{n}$ (denoted as $L_{\phi^{\prime}}$) from Eq. (21.2.14).
+$$ L_{\phi^{\prime}} = -\frac{1}{2}\sum_{n} \partial_{\mu} \phi^{\prime}_{n} \partial^{\mu} \phi^{\prime}_{n} - \frac{1}{2}\sum_{n,m} M^2_{\text{full}, nm} \phi^{\prime}_{n} \phi^{\prime}_{m} $$
 By integrating by parts ($\partial_\mu \phi' \partial^\mu \phi' \to -\phi' \Box \phi'$), we obtain:
-$$ L_{\phi'} \doteq -\frac{1}{2}\sum_{n,m} \phi'_n \left( -\Box \delta_{nm} + M^2_{\text{full}, nm} \right) \phi'_m $$
+$$ L_{\phi^{\prime}} \doteq -\frac{1}{2}\sum_{n,m} \phi^{\prime}_{n} \left( -\Box \delta_{nm} + M^2_{\text{full}, nm} \right) \phi^{\prime}_{m} $$
 Following the textbook's convention, transforming to momentum space ($\partial_\mu \to ik_\mu, \Box \to -k^2$) turns the propagator into the inverse matrix $\Delta(k) = D^{-1}(k)$ of the operator $D(k)$:
 $$ D(k) = k^2 I + M^2_{\text{full}} $$
 
@@ -26,21 +26,12 @@ $$ D(k) = k^2 I + M^2_{\text{full}} $$
 From the context of Eqs. (21.2.16) and (21.2.19), the full mass matrix $M^2_{\text{full}}$ can be separated into a "potential-derived term" and a "gauge-fixing derived term." (*Note: There is a typo in Eq. (21.2.16) of the textbook with a coefficient of $1/2$, but it must correctly be $\xi$ to be consistent with the eigenvalue equation (21.2.19)*).
 $$ M^2_{\text{full}} = \tilde{M}^2 - \xi F F^T $$
 Here, the matrix components are defined as follows:
-*   $\tilde{M}^2_{nm} = \frac{\partial^2 P(\phi)}{\partial\phi_n\partial\phi_m}\big|_{\phi=v}$
-*   $F_{n\alpha} = (t_\alpha v)_n$
+*   $\tilde{M}^2_{nm} = \frac{\partial^2 P(\phi)}{\partial\phi_{n}\partial\phi_{m}}\big|_{\phi=v}$
+*   $F_{n\alpha} = (t_{\alpha} v)_{n}$
 
 From Eqs. (21.2.15) and (21.2.18), these have the following important properties:
 1.  **Zero eigenvalues:** $\tilde{M}^2 F = 0$ (along the Nambu-Goldstone boson directions)
-2.  **Vector boson mass:** $(F^T F)_{\alpha\beta} = \sum_n (t_\alpha v)_n (t_\beta v)_n = -\mu^2_{\alpha\beta}$ (*Since $t_\alpha$ is anti-Hermitian, the sum
-
-<!-- Local Variables: -->
-<!-- gptel-model: gemini-3.1-pro-preview -->
-<!-- gptel--backend-name: "Gemini" -->
-<!-- gptel--system-message: "You are a large language model living in Emacs and a helpful assistant. Respond concisely." -->
-<!-- gptel--tool-names: nil -->
-<!-- gptel--bounds: ((ignore (16 4630)) (response (4632 7514))) -->
-<!-- End: -->
- of squares is negative*)
+2.  **Vector boson mass:** $(F^T F)_{\alpha\beta} = \sum_{n} (t_{\alpha} v)_{n} (t_{\beta} v)_{n} = -\mu^2_{\alpha\beta}$ (*Since $t_{\alpha}$ is anti-Hermitian, the sum of squares is negative*)
 
 ## Step 3: Calculating the inverse matrix using the Woodbury matrix identity
 The propagator we want to find is $\Delta(k) = (k^2 I + \tilde{M}^2 - \xi F F^T)^{-1}$.
@@ -70,7 +61,7 @@ $$ \Delta(k) = A^{-1} + \xi F \frac{1}{k^2} (k^2 I + \xi \mu^2)^{-1} F^T $$
 
 ## Conclusion
 Writing down the obtained matrix expression component by component, we get:
-$$ \Delta_{nm}(k) = (k^2 + \tilde{M}^2)^{-1}_{nm} + \xi \sum_{\alpha\beta}(t_\alpha v)_n (t_\alpha v)_m (k^2)^{-1} (k^2 + \xi \mu^2)^{-1}_{\alpha\beta} $$
+$$ \Delta_{nm}(k) = (k^2 + \tilde{M}^2)^{-1}_{nm} + \xi \sum_{\alpha\beta}(t_{\alpha} v)_{n} (t_{\alpha} v)_{m} (k^2)^{-1} (k^2 + \xi \mu^2)^{-1}_{\alpha\beta} $$
 *Note: The $M^2$ in the first term of Eq. (21.2.21) in the text specifically refers only to the potential-derived mass matrix $\tilde{M}^2 = \frac{\partial^2 P}{\partial\phi^2}$. With this understood,* **Eq. (21.2.21) is fully derived**.
  
 ## Why was the Woodbury matrix identity used?
@@ -129,5 +120,3 @@ When analytically decoupling these to compute propagators, the Woodbury matrix i
 
 Woodbury matrix identity
 https://en.wikipedia.org/wiki/Woodbury_matrix_identity#cite_note-higham-5
-
-### 
