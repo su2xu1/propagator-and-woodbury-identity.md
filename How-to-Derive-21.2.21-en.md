@@ -2,12 +2,12 @@
 I will explain the step-by-step procedure to derive the scalar field propagator $\Delta_{nm}(k)$ in Eq. (21.2.21) from the Lagrangian in Eq. (21.2.14).
 
 
-```math
+$$
 \begin{aligned}
 L_{QUAD}={}&
 -\frac{1}{4}\sum_\alpha({\partial^\mu}{A_\alpha^\nu}-{\partial^\nu}{A_\alpha^\mu})({\partial_\mu}{A_{\alpha\nu}}-{\partial_\nu}{A_{\alpha\mu}})\\
 &-\frac{1}{2}\sum_{\alpha\beta}\mu^2_{\alpha\beta}A_\alpha^{\mu}A_{\beta\mu}
--\frac{1}{2\xi}\sum_\alpha({\partial_\mu}{A_\alpha^\mu})({\partial_nu}{A_\alpha^\nu})\\
+-\frac{1}{2\xi}\sum_\alpha({\partial_\mu}{A_\alpha^\mu})({\partial_\nu}{A_\alpha^\nu})\\
 &-\frac{1}{2}\sum_n{\partial_{\mu}\phi^{'}_n}{\partial^{\mu}\phi^{'}_n}
 -\frac{1}{2}\sum_{nm}M^2_{nm}{\phi^{'}_n}{\phi^{'}_m}\\
 &- {\overline\Psi}({\gamma_\mu}{\partial^\mu} +m)\Psi\\
@@ -15,7 +15,7 @@ L_{QUAD}={}&
 - \xi\sum_{\alpha\beta}\mu^2_{\alpha\beta}\omega^*_\alpha\omega_\beta\\
 &+ \text{total derivatives},\quad (21.2.14)
 \end{aligned}
-```
+$$
 
 
 $$
