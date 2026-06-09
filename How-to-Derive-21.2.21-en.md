@@ -41,18 +41,18 @@ $$D(k) = k^2 I + M^2_{\text{full}}$$
 
 ### Step 2: Decomposition of the mass matrix and its properties
 From the context of Eqs. (21.2.16) and (21.2.19), the full mass matrix $M^2_{\text{full}}$ can be separated into a "potential-derived term" and a "gauge-fixing derived term." (*Note: There is a typo in Eq. (21.2.16) of the textbook with a coefficient of $1/2$, but it must correctly be $\xi$ to be consistent with the eigenvalue equation (21.2.19)*).
-$$M^2_{\text{full}} = \tilde{M}^2 - \xi F F^T$$
+$$M^2_{\text{full}} = \tilde{M}^2 - \xi F^T F$$
 Here, the matrix components are defined as follows:
 *   $\tilde{M}^2_{nm} = \frac{\partial^2 P(\phi)}{\partial\phi_n\partial\phi_m}\big|_{\phi=v}$
-*   $F_{n\alpha} = (t_\alpha v)_n$
+*   $F_{\alpha n} = (t_\alpha v)_n$
 
 From Eqs. (21.2.15) and (21.2.18), these have the following important properties:
-1.  **Zero eigenvalues:** $\tilde{M}^2 F = 0$ (along the Nambu-Goldstone boson directions)
-2.  **Vector boson mass:** $(F^T F)_{\alpha\beta} = \sum_n (t_\alpha v)_n (t_\beta v)_n = -\mu^2_{\alpha\beta}$  (Since $t_\alpha$ is anti-Hermitian, the sum)
+1.  **Zero eigenvalues:** $\tilde{M}^2 F^T = 0$ (along the Nambu-Goldstone boson directions)
+2.  **Vector boson mass:** $(FF^T)_{\alpha\beta} = \sum_n (t_\alpha v)_n (t_\beta v)_n = -\mu^2_{\alpha\beta}$  (Since $t_\alpha$ is anti-Hermitian, the sum)
 
 
 ### Step 3: Calculating the inverse matrix using the Woodbury matrix identity
-The propagator we want to find is $\Delta(k) = (k^2I+\tilde{M}^2-{\xi}FF^T)^{-1}$.
+The propagator we want to find is $\Delta(k) = (k^2I+\tilde{M}^2-{\xi}F^TF)^{-1}$.
 We apply the **Woodbury matrix identity** to this:
 
 $$
@@ -61,24 +61,24 @@ $$
 
 We assign each matrix as follows:
 *   $A = k^2 I + \tilde{M}^2$
-*   $U = F, \quad V = F^T$
+*   $U = F^T, \quad V = F$
 *   $C = -\xi I$
 
-** ① Calculating $A^{-1} F$:**
-Since $\tilde{M}^2F= 0$, $AF=(k^2I+\tilde{M}^2)F=k^2 F$.
-Thus, multiplying both sides by $A^{-1}$ gives $A^{-1} F = \frac{1}{k^2} F$.
-(Similarly, $F^T A^{-1} = \frac{1}{k^2} F^T$)
+** ① Calculating $A^{-1} F^T$:**
+Since $\tilde{M}^2F^T= 0$, $AF^T=(k^2I+\tilde{M}^2)F^T=k^2 F^T$.
+Thus, multiplying both sides by $A^{-1}$ gives $A^{-1} F^T = \frac{1}{k^2} F^T$.
+(Similarly, $F A^{-1} = \frac{1}{k^2} F$)
 
 **② Calculating the bracketed term $(C^{-1} + V A^{-1} U)$:**
-$C^{-1} + F^T (A^{-1} F) = -\frac{1}{\xi}I + \frac{1}{k^2} F^T F$
-Substituting the property $F^T F = -\mu^2$ and simplifying:
+$C^{-1} + F (A^{-1} F^T) = -\frac{1}{\xi}I + \frac{1}{k^2} F F^T$
+Substituting the property $F F^T = -\mu^2$ and simplifying:
 $$= -\frac{1}{\xi}I - \frac{1}{k^2}\mu^2 = -\frac{1}{\xi k^2} (k^2 I + \xi \mu^2)$$
 
 **③ Finalizing the propagator $\Delta(k)$:**
 The inverse matrix of ② is $- \xi k^2 (k^2 I + \xi \mu^2)^{-1}$. Substituting this into the identity:
-$$ \Delta(k) = A^{-1} - \left(\frac{1}{k^2}F\right) \left[ - \xi k^2 (k^2 I + \xi \mu^2)^{-1} \right] \left(\frac{1}{k^2}F^T\right) $$
+$$ \Delta(k) = A^{-1} - \left(\frac{1}{k^2}F^T\right) \left[ - \xi k^2 (k^2 I + \xi \mu^2)^{-1} \right] \left(\frac{1}{k^2}F\right) $$
 The minus signs and $k^2$ cancel out, yielding:
-$$\Delta(k) = A^{-1} + \xi F \frac{1}{k^2} (k^2 I + \xi \mu^2)^{-1} F^T$$
+$$\Delta(k) = A^{-1} + \xi F^T \frac{1}{k^2} (k^2 I + \xi \mu^2)^{-1} F$$
 
 ## Conclusion
 Writing down the obtained matrix expression component by component, we get:
