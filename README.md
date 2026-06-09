@@ -20,7 +20,7 @@ The components of these matrices are defined as
 $$v\tilde{M}^2_{nm} = \partial^2 P / \partial\phi_n\partial\phi_m |_{\phi=v}v$$
  and 
  
- $$ F_{n\alpha} = (t_\alpha v)_n $$.
+ $$ F_{n{\alpha}} = (t_{\alpha}v)_n $$.
 
 Due to spontaneous symmetry breaking, these matrices are subject to the following crucial physical properties:
 
