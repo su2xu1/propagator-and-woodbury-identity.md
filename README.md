@@ -21,7 +21,7 @@ $$v\tilde{M}^2_{nm} = \partial^2 P / \partial\phi_n\partial\phi_m |_{\phi=v}v$$
 
  and 
  
- $$ F_{\alpha n} = (t_\alpha v)_n \quad $$.
+ $$ {F_\alpha}_n= (t_\alpha v)_n \quad $$.
 
 Due to spontaneous symmetry breaking, these matrices are subject to the following crucial physical properties:
 
