@@ -1,4 +1,11 @@
-### Algebraic Derivation of the Scalar Propagator in Spontaneously Broken Gauge Theories via the Woodbury Matrix Identity
+---
+layout: default
+title: Algebraic Derivation via the Woodbury Matrix Identity
+---
+
+# Algebraic Derivation of the Scalar Propagator in Spontaneously Broken Gauge Theories via the Woodbury Matrix Identity
+
+Published on GitHub Pages: <https://su2xu1.github.io/propagator-and-woodbury-identity/README>
 
 #### 1. Introduction
 In spontaneously broken gauge theories, deriving the scalar field propagator in the generalized $R_\xi$ gauge (renormalizable $\xi$-gauge) often involves cumbersome calculations. This difficulty arises because the contribution introduced to the scalar fields to cancel the cross terms from the gauge-fixing term manifests as an off-diagonal, low-rank correction to the mass matrix.
